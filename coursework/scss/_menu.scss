@@ -92,18 +92,41 @@
   }
 
   .nav-link {
+      
     transform: translateX(600px);
     @include easeOut;
 
     &.show {
       transform: translateX(0);
     }
+
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    @include easeOut;
+    > a {
+        &:hover{
+            color: $secondary-color;
+            @include easeOut;
+        }
+    }
   }
 }
 
 //DELAY NAV LINKS
 @for $x from 1 through 4 {
-    .nav-link:nth-child(#{$x}) {
-        transition-delay: $x * 0.1s;
-    }
+  .nav-link:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
 }
