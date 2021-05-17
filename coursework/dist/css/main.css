@@ -38,14 +38,14 @@
     height: 100vh;
     overflow: hidden; }
   .menu-nav {
-    background-color: #292929;
+    background-color: #343434;
     list-style: none;
     transform: translateY(-100%);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translateY(0); }
   .menu-branding {
-    background: #363636;
+    background: #414141;
     transform: translateY(100%);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -70,7 +70,6 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: white;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link > a:hover {
@@ -92,22 +91,37 @@
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main {
     align-items: center;
-    text-align: center;
-    color: red; }
+    text-align: center; }
     main .name-heading {
       line-height: 1;
       margin-bottom: 1; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 76px) {
   main {
     align-items: center;
-    text-align: center;
-    color: red; }
+    text-align: center; }
     main .name-heading {
       line-height: 1;
       margin-bottom: 1; }
     main #home h1 {
-      margin-top: 10vh; } }
+      margin-top: 10vh; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translateX(0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translateX(-100%);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translateX(100%); }
+    .menu-branding .portrait {
+      background: url(/dist/img/portrait_small.jpg);
+      width: 150px;
+      height: 150px; } }
 
 * {
   margin: 0;
@@ -117,7 +131,8 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #363636;
+  background-color: #414141;
+  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-image {
@@ -131,14 +146,13 @@ body {
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(54, 54, 54, 0.7);
+      background-color: rgba(65, 65, 65, 0.7);
       z-index: -1; }
 
 h1,
 h2,
 h3 {
-  font-weight: 400;
-  color: white; }
+  font-weight: 400; }
   h1.name-heading,
   h2.name-heading,
   h3.name-heading {
@@ -148,7 +162,7 @@ h3 {
   h3.info-heading {
     margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
-    background-color: rgba(54, 54, 54, 0.5); }
+    background-color: rgba(65, 65, 65, 0.5); }
 
 a {
   color: white;

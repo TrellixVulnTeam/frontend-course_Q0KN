@@ -13,7 +13,7 @@
     main {
         align-items: center;
         text-align: center;
-        color: red;
+        
 
         .name-heading{
             line-height: 1;
@@ -27,7 +27,7 @@
     main {
         align-items: center;
         text-align: center;
-        color: red;
+        
 
         .name-heading{
             line-height: 1;
@@ -36,6 +36,34 @@
 
         #home h1{
             margin-top: 10vh;
+        }
+    }
+
+    ul.menu-nav, div.menu-branding{
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show{
+            transform: translateX(0);
+        }
+
+    }
+
+    .menu-nav{
+        height: 75vh;
+        transform: translateX(-100%);
+        font-size: 24px;
+    }
+
+    .menu-branding{
+        height: 25vh;
+        transform: translateX(100%);
+        
+        .portrait {
+            background: url(/dist/img/portrait_small.jpg);
+            width: 150px;
+            height: 150px;
         }
     }
     

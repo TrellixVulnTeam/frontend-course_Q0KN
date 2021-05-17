@@ -1,4 +1,4 @@
-$primary-color: rgb(54, 54, 54);
+$primary-color: rgb(65, 65, 65);
 $secondary-color: yellow;
 $show-home-image: true;
 $home-image: url(/dist/img/background.jpg);
@@ -28,11 +28,21 @@ $background-opacity: 0.9;
     }
   }
 }
+//TEXT COLOR
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
 
 //MEDIA QUERIES
 
 @mixin mediaSm {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 76px) {
     @content;
   }
 }
