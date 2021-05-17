@@ -1,0 +1,42 @@
+//WIDESCREEN
+@include mediaXL {
+
+}
+
+//DESKTOP
+@include mediaLg {
+    
+}
+
+//TABLET
+@include mediaMd {
+    main {
+        align-items: center;
+        text-align: center;
+        color: red;
+
+        .name-heading{
+            line-height: 1;
+            margin-bottom: 1;
+        }
+    }
+}
+
+//PHONE
+@include mediaSm {
+    main {
+        align-items: center;
+        text-align: center;
+        color: red;
+
+        .name-heading{
+            line-height: 1;
+            margin-bottom: 1;
+        }
+
+        #home h1{
+            margin-top: 10vh;
+        }
+    }
+    
+}
