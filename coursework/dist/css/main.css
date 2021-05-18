@@ -102,7 +102,7 @@ body {
   line-height: 1.5;
   scroll-behavior: smooth; }
   body#bg-image {
-    background: url(/dist/img/background.jpg);
+    background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-image:after {
