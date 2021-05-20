@@ -1,19 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 $primary-color: rgb(101, 232, 255);
-$secondary-color: yellow;
-$main-font: 'Montserrat', sans-serif;
-$main-textcolor: black;
-$waves-image: url("../images/wave.png");
+$main-font: "Montserrat", sans-serif;
+$main-textcolor: rgb(59, 59, 59);
 
-@mixin wave-animation {
-    @keyframes wave-animation {
+@mixin animation-mix ($name) {
+    @keyframes #{$name} {
         0% {
-            transform: translateX(0);
+            height: 20px;
         }
-    
-        100%{
-            transform: translateX(100%);
+        50%{
+            height: 100px;
+        }
+        100% {
+            height: 20px;
         }
     }
 }
+
+@mixin basictrans {
+    transition: 0.4s ease-in;
+}
+
+@mixin mediaPhone {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }

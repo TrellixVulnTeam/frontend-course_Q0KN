@@ -1,0 +1,7 @@
+
+@include mediaPhone {
+    #bottom-nav{
+        width: 80%;
+        @include basictrans;
+    }
+}

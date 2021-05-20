@@ -1,10 +1,74 @@
 @import "config";
+@import "bottomnav";
 
 body {
   font-family: $main-font;
   color: $main-textcolor;
   padding: 0;
   margin: 0;
+  height: 100vh;
+  width: 100%;
   box-sizing: border-box;
   background-color: $primary-color; //Replace with graphics
+  overflow: hidden;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#header-text {
+  font-size: 5rem;
+  font-weight: 700;
+  color: darken($primary-color, 40);
+}
+
+#circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.lines {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  transform: rotate(90deg);
+
+  .line {
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    margin-left: 5px;
+    border-radius: 5px;
+
+    &:nth-child(1) {
+      animation: slider ease-in-out 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 0;
+    }
+    &:nth-child(2) {
+      animation: slider ease-in-out 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.125s;
+    }
+    &:nth-child(3) {
+      animation: slider ease-in-out 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.25s;
+    }
+    &:nth-child(4) {
+      animation: slider ease-in-out 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.5s;
+    }
+  }
+}
+
+@include animation-mix(slider);
+@import "mobile";
