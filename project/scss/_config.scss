@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$primary-color: gray;
+$secondary-color: yellow;
+$main-font: 'Montserrat', sans-serif;
+$main-textcolor: black;
+$waves-image: url("../images/wave.png");
+
+@mixin wave-animation {
+    @keyframes wave-animation {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100%{
+            transform: translateX(100%);
+        }
+    }
+}

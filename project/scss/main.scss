@@ -1,0 +1,47 @@
+@import "config";
+
+body {
+  font-family: $main-font;
+  color: $main-textcolor;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(255, 233, 37);
+  height: 9vh;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1.5rem;
+
+    .logo-container {
+      display: flex;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      font-size: 1.2rem;
+      list-style: none;
+
+      & a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+main {
+    height: 91vh;
+    width: 100%;
+    background-color: red;
+    //background-color: green;
+
+
+}
+
