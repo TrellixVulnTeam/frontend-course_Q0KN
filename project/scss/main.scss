@@ -7,10 +7,10 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   background-color: $primary-color; //Replace with graphics
-  overflow: hidden;
+ 
 }
 
 main {
@@ -19,10 +19,11 @@ main {
   align-items: center;
   justify-content: center;
   height: 100%;
+  overflow: hidden;
 }
 
 #header-text {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   color: darken($primary-color, 40);
 }
