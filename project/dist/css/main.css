@@ -11,8 +11,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 0rem 2rem;
-  border-radius: 10px 10px 0 0;
-  transition: 0.4s ease-in; }
+  border-radius: 10px 10px 0 0; }
   #bottom-nav ul {
     width: 100%;
     display: flex;
