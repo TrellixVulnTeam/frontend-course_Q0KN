@@ -11,10 +11,16 @@
       z-index: -1;
     }
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
   
   .big-heading {
     font-size: 2rem;
-    margin-top: 40vh;
     margin-left: 10vw;
   
     .accent {
