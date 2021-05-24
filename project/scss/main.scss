@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "index_style";
 
 body {
   margin: 0;
@@ -19,57 +20,10 @@ body {
   }
 }
 
-#bg {
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 0.5;
-    z-index: -1;
-  }
-}
-
-
-
-.name-heading {
-  font-size: 2rem;
-  margin-top: 40vh;
-  margin-left: 10vw;
-
-  .sname {
-    color: $primary-color;
-  }
-
-  .info-text {
-    font-size: 2rem;
-  }
-}
-
-.media-links{
-  margin-right: 1rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @include easingOut;
-
-  > * {
-    margin: 1.5rem 0;
-    @include easingOut;
-    &:hover {
-      color: $primary-color;
-    }
-  }
-
-  &.open {
-    opacity: 0;
+.projects {
+  img {
+    width: 100px;
+    height: 100px;
   }
 }
 
