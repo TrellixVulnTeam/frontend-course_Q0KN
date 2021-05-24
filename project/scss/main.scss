@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 10vw;
   box-sizing: border-box;
   font-family: $main-font;
   color: $main-textcolor;
@@ -21,17 +21,20 @@ body {
 }
 
 .projects {
-  margin-left: 10vw;
+  //margin-left: 10vw;
+  margin-top: 10%;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   .single-project {
     background-color: rgba(63, 63, 63, 0.466);
     border: 3px solid white;
     text-align: center;
-    padding: 10px;
-    width: 300px;
+    padding: 30px;
+    max-width: 300px;
+    min-width: 250px;
+    height: 400px;
     img {
       width: 100px;
       height: 100px;
@@ -45,7 +48,7 @@ body {
       border-radius: 5px;
       font-size: 1.2rem;
       color: white;
-      z-index: 1000;
+      margin-top: 10px;
       @include easingOut;
 
       &:hover {
@@ -57,4 +60,11 @@ body {
       }
     }
   }
+}
+
+.contact-info {
+  margin-top: 5%;
+  border: 3px solid $primary-color;
+  width: fit-content;
+  padding: 0 1rem;
 }

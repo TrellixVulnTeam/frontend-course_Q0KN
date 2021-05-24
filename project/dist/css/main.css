@@ -105,8 +105,7 @@ main {
   height: 100vh; }
 
 .big-heading {
-  font-size: 2rem;
-  margin-left: 10vw; }
+  font-size: 2rem; }
   .big-heading .accent {
     color: #0bff40; }
   .big-heading .info-text {
@@ -132,7 +131,7 @@ main {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 10vw;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: #eeeeee;
@@ -146,16 +145,18 @@ body {
     color: white; }
 
 .projects {
-  margin-left: 10vw;
+  margin-top: 10%;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
   .projects .single-project {
     background-color: rgba(63, 63, 63, 0.466);
     border: 3px solid white;
     text-align: center;
-    padding: 10px;
-    width: 300px; }
+    padding: 30px;
+    max-width: 300px;
+    min-width: 250px;
+    height: 400px; }
     .projects .single-project img {
       width: 100px;
       height: 100px; }
@@ -167,9 +168,15 @@ body {
       border-radius: 5px;
       font-size: 1.2rem;
       color: white;
-      z-index: 1000;
+      margin-top: 10px;
       transition: 0.5s ease-in-out; }
       .projects .single-project .button:hover {
         background-color: #0bff40; }
       .projects .single-project .button > * {
         margin: 0 0.5rem; }
+
+.contact-info {
+  margin-top: 5%;
+  border: 3px solid #0bff40;
+  width: fit-content;
+  padding: 0 1rem; }

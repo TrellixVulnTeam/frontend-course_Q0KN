@@ -18,13 +18,23 @@ menuButton.addEventListener("click", () => {
         sideThing.classList.add("open");
         menu.classList.add("open");
         
-        //mediaLinks.classList.add("open");
+        try {
+            mediaLinks.classList.add("open");
+        } catch (e) {
+
+        }
         menuOpen = true;
     } else {
         menuList.classList.remove("open");
         sideThing.classList.remove("open");
         menu.classList.remove("open");
         //mediaLinks.classList.remove("open");
+
+        try {
+            mediaLinks.classList.remove("open");
+        } catch (e) {
+
+        }
         menuOpen = false;
     }
 })
