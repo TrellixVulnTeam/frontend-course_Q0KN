@@ -1,0 +1,28 @@
+@include mobileScreen {
+  body {
+    h2 {
+    }
+  }
+
+  .big-heading {
+    font-size: 1rem;
+
+    h2.info-text {
+      font-size: 1.5rem;
+    }
+  }
+
+  .media-links {
+    top: 90vh;
+    height: fit-content;
+    flex-direction: row;
+    width: 100vw;
+    margin: 0;
+
+    justify-content: space-evenly;
+
+    .nav-link {
+      color: red;
+    }
+  }
+}

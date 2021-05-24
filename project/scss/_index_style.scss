@@ -42,10 +42,11 @@
     justify-content: center;
     @include easingOut;
   
-    > * {
+    > a {
       margin: 1.5rem 0;
-      @include easingOut;
-      &:hover {
+      
+      > i:hover {
+        @include easingOut;
         color: $primary-color;
       }
     }

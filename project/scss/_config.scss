@@ -8,3 +8,9 @@ $homebg: url("../images/homebg.jpg");
 @mixin easingOut {
     transition: 0.5s ease-in-out;
 }
+
+@mixin mobileScreen {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
