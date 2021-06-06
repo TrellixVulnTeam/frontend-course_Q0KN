@@ -80,7 +80,7 @@
     width: 150px;
     border: 3px solid white;
     border-radius: 50%;
-    background: url("../images/profilepic.png");
+    background: url("../images/placeholder.png");
     background-size: cover;
     top: 60%;
     left: 50%;
@@ -111,6 +111,19 @@
   .projects {
     grid-template-columns: repeat(1, 1fr);
     overflow: visible;
+    margin-bottom: 20px;
+    overflow-y: auto; }
+    .projects .single-project {
+      margin-top: 10%;
+      background-color: rgba(63, 63, 63, 0.466);
+      border: 3px solid white;
+      text-align: center;
+      padding: 20px;
+      max-width: 80%; }
+      .projects .single-project img {
+        width: 100px;
+        height: 100px; }
+  body {
     height: fit-content; } }
 
 body {
@@ -233,4 +246,17 @@ main {
   .projects {
     grid-template-columns: repeat(1, 1fr);
     overflow: visible;
+    margin-bottom: 20px;
+    overflow-y: auto; }
+    .projects .single-project {
+      margin-top: 10%;
+      background-color: rgba(63, 63, 63, 0.466);
+      border: 3px solid white;
+      text-align: center;
+      padding: 20px;
+      max-width: 80%; }
+      .projects .single-project img {
+        width: 100px;
+        height: 100px; }
+  body {
     height: fit-content; } }
