@@ -27,7 +27,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: black;
     opacity: 0.5;
@@ -83,7 +83,6 @@ main {
 
 .projects {
   //margin-left: 10vw;
-  margin-top: 10%;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
@@ -94,8 +93,6 @@ main {
     text-align: center;
     padding: 30px;
     max-width: 300px;
-    min-width: 250px;
-    height: 400px;
     img {
       width: 100px;
       height: 100px;
