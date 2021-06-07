@@ -1,4 +1,8 @@
 <h1>Front-End course</h1>
+
+<h2>About this repository:</h2>
+<p>This repository was made by Johannes Haapanen for a front-end course. It contains the course work folder and the project folder.</p>
+
 <h2>Instructions to run the website in developer mode:</h2>
 
 * Cd into <"cloned repo"/project>
